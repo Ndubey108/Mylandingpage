@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #f2f2f2;
+}
+.btn{
+  position: absolute;
+  top: 15px;
+  left: 4px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background: rgb(255, 69, 0);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+  
+}
+.btn.click{
+  left: 260px;
+}
+.btn li{
+  position: fixed;
+  color: white;
+  font-size: 38px;
+  line-height: 45px;
+}
+.btn.click li:before{
+  content: '\f00d';
+}
+.sidebar{
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  left: -250px;
+  background: white;
+  transition: left 0.4s ease;
+}
+.sidebar.show{
+  left: 0px;
+}
+.sidebar .text{
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: rgb(255, 69, 0);
+  letter-spacing: 1px;
+}
+nav ul{
+  background: rgb(255, 69, 0);
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+nav ul li{
+  line-height: 60px;
+  border-top: 1px solid black;
+}
+nav ul li:last-child{
+  border-bottom: 1px solid black;
+}
+nav ul li a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+nav ul li.active a{
+  color: #d6804b;
+  background: #1e1e1e;
+  border-left-color:white;
+}
+nav ul li a:hover{
+  background: #1e1e1e;
+  border-left-color:orangered;
+}
+nav ul ul{
+  position: static;
+  display: none;
+}
+nav ul .feat-show.show{
+  display: block;
+}
+nav ul .serv-show.show1{
+  display: block;
+}
+nav ul ul li{
+  line-height: 42px;
+  border-top: none;
+}
+nav ul ul li a{
+  font-size: 17px;
+  color: white;
+  padding-left: 80px;
+}
+nav ul li.active ul li a{
+  color: #e6e6e6;
+  background: #1b1b1b;
+  border-left-color: transparent;
+}
+nav ul ul li a:hover{
+  color: #d6804b !important;
+  background: #1e1e1e!important;
+  border-left-color: orangered !important;
+
+}
+nav ul li a span{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+nav ul li a span.rotate{
+  transform: translateY(-50%) rotate(-180deg);
+}
+/* .content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #202020;
+  z-ind
+  ex: -1;
+  text-align: center;
+}
+.content h1{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+} */
+#button {
+  background:  black;
+  padding: 10px 15px;
+  margin-top: 25px;
+  color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 29px -4px rgba(red, green, blue, 0.75);
+  text-decoration: none;
+  transition: 0.4s;
+}
+#button:hover{
+  color:orangered;
+}
+.popup {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.popup-content {
+   height: 470px;
+   width: 420px;
+   background: white;
+   padding: 15px;
+   border-radius: 10px;
+   position: relative;
+}
+.popup-content span{
+  color:black;
+  margin-left:11px;
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+input {
+  margin: 15px;
+  display: block;
+  width: 90%;
+  padding: 6px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 4px;
+  align-items: center;
+  margin-top:2px;
+}
+label{
+display:block;
+text-align: left;
+margin-left: 15px;
+  font-weight: 500;
+ 
+ 
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  height: 40px;
+  width: 50px;
+  cursor: pointer;
+}
+.user-img {
+  width: 40px;
+}
+.menu-img {
+ width: 100px;
+  margin-left: 25%;
+}
+nav{
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  height: 70px;
+  margin: 0;
+  background:orangered;
+}
+.heading {
+  position: relative;
+  top: 15px;
+  text-align: center;
+  color: white;
+}
+
+#register-btn {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background:white;
+  text-decoration: none;
+  padding: 10px;
+  margin-top:17px;
+  margin: 10px;
+  color:black;
+  font-weight: 600;
+  border-radius: 8px;
+  border:1px solid black;
+}
+#register-btn:hover{
+  border:1px solid white;
+  background:black;
+  color:orangered;
+  
+}
+.body-content {
+  position: relative;
+  width: 80%;
+  left: 20%;
+  padding: 10px 0 10px 8px;
+  z-index: -1;
+  text-align: justify;
+}
+p{
+  margin-right: 10px;
+}
+.img img {
+  padding: 10px 10px 10px 10px;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  
+}
