@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <script src="https://use.fontawesome.com/dacbc9cdc5.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://use.fontawesome.com/dacbc9cdc5.js"></script>
+    
+  <title>Landing Page</title>
+</head>
+<body>
+  <nav>
+      <h1 class="heading">My Landing Page</h1>
+      <!-- <a href="" class="button-reg">Register Here</a> -->
+      <div class="content">
+      <a href="#" id="register-btn">SIGNUP</a>
+  </div>
+  </nav>
+  <div class="btn">
+    <i class="fas fa-bars"></i>
+  </div>
+  <nav class="sidebar">
+    <img src="images/user.png" class="menu-img" alt="">
+    <div class="text">Nidhi</div>
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li>
+        <a href="#" class="feat-btn">Education
+          <span class="fas fa-caret-down first"></span>
+        </a>
+        <ul class="feat-show">
+          <li><a href="#">Animation</a></li>
+          <li><a href="#">Performance</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="serv-btn">Services
+         
+        </a>
+      </li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Setting</a></li>
+    </ul>
+  </nav>
+  
+  <div class="popup">
+    <div class="popup-content">
+     
+      <img src="images/user.png" class="user-img" alt="user-img">
+      <img src="images/close.png" class="close" alt="close-button"><br>
+      <span>Register with us to get offers, Support and more.</span>
+     <label for="Name" >Name</label>
+      <input type="text" placeholder="Username" name="" id="">
+      <label for="Email">Email</label>
+      <input type="email" placeholder="Email" name="" id="">
+     <label for=" password"> password</label>
+      <input type="password" placeholder="Password" name="" id="">
+     <label for=" Confirm Password"> Confirm Password</label>
+      <input type="password" placeholder="Confirm Password" name="" id="">
+
+      
+      <a href="" id="button">Register</a>
+    </div>
+  </div>
+  <div class="body-content">
+    <h1>Welcome to the page</h1>
+
+    <p>Hello everyone! My name is <i>Nidhi</i> . I completed <b>BSCIT</b> in 2021.</p><br>
+    <p>I got the best training platform for <i>full stack development.</i> the platform name is <i><b>Newton school</b>
+    </i>That platform is offering free course untill you got the job <b>5 LPA</b> for more detail visit <a href="https://newtonschool.co/">click here</a></p><br>
+    <p>for registration please click on the top right side button known as <b>SIGNUP</b></p>
+    <div class="img">
+      <img src="https://entrackr.com/wp-content/uploads/2021/02/NEWTON-SCHOOL.jpg" alt="">
+    </div>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ab, dolore iste et nisi. Similique unde non maxime sint nam obcaecati quis alias laborum deserunt natus ducimus cum, magni earum illo totam suscipit necessitatibus nesciunt aliquam fugit iure est debitis illum incidunt adipisci! Voluptates totam maiores dignissimos blanditiis assumenda id vero molestias veritatis voluptatibus sapiente, explicabo provident doloremque quidem repudiandae nihil, ipsa facilis expedita ratione reiciendis consectetur consequatur rem! Fuga iusto, facilis quaerat mollitia modi adipisci nihil laborum. In atque aliquid commodi sit ut sed laboriosam provident quod magni dicta ducimus fuga ratione repellendus dolorum quam consequatur saepe quia eveniet, alias excepturi id. Est aliquam quidem laboriosam ab, odit cumque veritatis repellat dignissimos quasi qui sit sequi excepturi nesciunt laborum, blanditiis iste cum saepe ut autem earum temporibus! Voluptatum accusantium quos eos aliquam consequatur ipsum voluptatem aperiam sint nobis! Inventore reiciendis sequi voluptatibus cupiditate repellendus quas earum distinctio possimus, animi veniam doloremque harum nostrum ratione blanditiis, vitae omnis eius doloribus, incidunt quo pariatur. Corporis sunt quos, quis aliquam asperiores consectetur sapiente ab animi sed velit eius nisi harum facere laudantium quod magnam officia? Voluptatum sit corrupti dolorum reprehenderit. Incidunt, iste, cum. Quo, ducimus sint a harum cum ipsa tempora hic doloremque libero dolore voluptas nostrum. Iusto quia saepe harum delectus nobis doloremque odio autem perferendis dolores facere. Repellat autem iure, sit debitis impedit voluptas ratione qui inventore sint soluta, exercitationem accusamus quis voluptatum illo, aut aperiam fuga provident doloribus recusandae! Soluta praesentium corporis dolorum deserunt, aperiam qui quaerat esse officia facere recusandae totam reprehenderit autem! Iste accusantium porro odit eos enim voluptate reiciendis amet soluta, omnis placeat repellat dignissimos, dolores expedita assumenda sapiente laboriosam, a consequatur id. Illum, unde. Autem, delectus necessitatibus hic soluta repellat vitae quas minima libero ducimus nam eius eveniet cum qui enim adipisci deserunt! Perferendis, neque?</p>
+  </div>
+  </div>
+  <!--javascript code-->
+  <script>
+  $('.btn').click(function(){
+    $(this).toggleClass("click");
+    $('.sidebar').toggleClass("show");
+  });
+    $('.feat-btn').click(function(){
+      $('nav ul .feat-show').toggleClass("show");
+      $('nav ul .first').toggleClass("rotate");
+    });
+    $('.serv-btn').click(function(){
+      $('nav ul .serv-show').toggleClass("show1");
+      $('nav ul .second').toggleClass("rotate");
+    });
+    $('nav ul li').click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+    });
+
+    document.getElementById("register-btn").addEventListener("click", function(){
+      document.querySelector(".popup").style.display = "flex";
+    })
+
+    document.querySelector(".close").addEventListener("click", function(){
+      document.querySelector(".popup").style.display = "none";
+    })
+  </script>
+
+</body>
+</html>
